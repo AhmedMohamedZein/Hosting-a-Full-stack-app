@@ -7,11 +7,12 @@
 - Create scripts to deploy each component of the application.
 - Create and document an automated pipeline using CircleCI.
 
-# Check the deployed website !
+## Check my deployed website !
   
 http://front-end-deployment-project.s3-website-us-east-1.amazonaws.com
 
- ## Environment variables at AWS 
+
+## Environment variables at AWS 
 
 ![eb configuration](https://user-images.githubusercontent.com/74258945/188183501-e08b3197-20e2-452d-8040-a66febbaff29.png)
 
