@@ -75,8 +75,8 @@ workflows:
               - master
               - main
         type: approval
-          requires:
-            - build
+        requires:
+          - build
       - deploy:
           filters:
             branches:
