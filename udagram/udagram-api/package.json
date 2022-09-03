@@ -14,7 +14,7 @@
     "clean": "rm -rf www/ || true",
     "deploy": "npm run build && eb list && eb use My-deployment-project-env && eb deploy",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-    "test": "npm run test"
+    "test": "echo 'Backend Test' "
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
