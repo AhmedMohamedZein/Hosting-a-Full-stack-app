@@ -62,21 +62,21 @@ jobs:
 workflows:
   udagram:
     jobs:
-    - hold:
-      type: approval  
-        - build:
+      - build:
+        - hold:
+          type: approval
+        filters:
+          branches:
+            only:
+              - master 
+      - hold:
           filters:
             branches:
               only:
-                - master 
-        - hold:
-            filters:
-              branches:
-                only:
-                  - master
-            type: approval
-            requires:
-              - build
-        - deploy:
-            requires:
-              - hold
+                - master
+          type: approval
+          requires:
+            - build
+      - deploy:
+          requires:
+            - hold
